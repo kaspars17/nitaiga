@@ -1,0 +1,352 @@
+html{
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Caveat', cursive;
+}
+
+main, footer {
+	padding: 0;
+	margin: 0;
+	/*background-image: url(media/sea-theme-background.svg);*/
+	background-position: center;
+	/*background-repeat: no-repeat;*/
+	background-size: contain;
+}
+
+.container-fluid {
+	padding:0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	position: relative;
+	background-image: url(nitaiga-forest-with-wooden-path.jpg);
+	background-attachment: fixed;	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content-background-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-contacts {
+	text-decoration: none;
+	color: white;
+	white-space: nowrap;
+}
+
+.nav-contacts:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar {
+	position: fixed;
+	width: 100vw;
+	z-index: 999;
+	color:white;
+	background: rgba(0,0,0,0.7);
+}
+
+.nav-link {
+	display: block;
+	border-bottom: 2px solid transparent;
+	color: white !important;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding-bottom: 0;
+}
+.nav-link:hover {
+	border-color: white;
+}
+
+.nav-link:selected {
+	border-color: red;
+}
+
+.header-container {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("nitaiga-sunny-header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/*.houses {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	top: -50%;
+	left: 0;
+	z-index: 3;
+}*/
+
+.sky {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.title-container {
+	font-family: 'Caveat', cursive;
+	position: absolute;
+	max-width: 350px;
+	min-height: 400px;
+	margin: auto;
+	padding: 125px 40px 75px 30px;
+	top:calc(25%);
+    left: 0;
+    right: 0;
+	text-align: center;
+	color: white;
+	z-index: 4;
+	background: rgb(0, 0, 0, 0.5);
+}
+
+.big-title {
+	font-size: 6rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+
+}
+.subtitle {
+ 	/*position: absolute;
+	top: calc(50% - 11rem);*/
+	/*width: 100%;*/
+	/*text-align: center;*/
+	/*color: white;*/
+	font-size: 2rem;
+	/*font-weight: 400;*/
+	letter-spacing: 2px;
+	/*z-index: 2;
+ 	/*font-style: italic;*/
+ 	/*padding-left: 40px*/;*/
+ }
+
+.about-container {
+	position: relative;
+	height: auto;
+	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	overflow: visible;
+}
+
+.about-image {
+
+}
+
+.about-image img{
+	border: 10px solid white;
+	transform: rotate(10deg);
+}
+/*.about-image {
+	position: absolute;
+	top: -200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../media/vawe-right1.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0
+}*/
+
+/*.about-overlay {
+	position: absolute;
+	top: -200px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgb(0, 0, 0, 0.5);
+	z-index: 1; 
+}
+*/
+.about-text {
+	position: relative;
+	color: white;
+	z-index: 5;
+}
+
+.houses-container {
+	position: relative;
+	width:100%;
+	min-height:600px;
+	color: white;
+	/*background: white;*/
+
+}
+
+.card {
+	max-width:350px;
+	min-height: 300px;
+	border: none;
+	overflow: hidden;
+}
+
+.card-body {
+	text-align: center;
+	color: black;
+}
+
+/*.gallery img {
+	transition: all 0.8s;
+}*/
+
+/*.gallery img:hover {
+	transform: scale(1.3);
+	transition: all 0.5s;
+}*/
+
+.carousel {
+	max-width: 800px;
+}
+
+.footer-container {
+	z-index: 1;
+	color:white;
+}
+
+.scrollToTopBtn {
+	z-index: 9999;
+	cursor: pointer;
+	width: 48px;
+	height: 48px;
+	background: white;
+	opacity: 0;
+	border:none;
+	border-radius: 20%;
+	position: fixed;
+	bottom:50px;
+	right:50px;
+	color:black !important;
+	text-align:center;
+	line-height: 48px;
+	font-size: 18px;
+	transform: translateY(100px);
+	transition: all .5s ease;
+}
+
+.showBtn {
+	opacity: 0.5;
+	transform: translateY(0);
+}
+
+.scrollToTopBtn:hover {
+	opacity: 0.8;
+}
+
+/*.footer-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+}*/
+
+footer a {
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s;
+}
+
+footer a:hover {
+	transition: all 0.5s;
+	letter-spacing: 2px;
+	color: white;
+	text-decoration: none;
+}
+
+.fa-facebook-square {
+	font-size:36px;
+}
+.fa-facebook-square:hover {
+	color: #4267B2;
+	/*background-color: white;*/
+}
+
+@media (min-width: 1660px) {
+	.carousel {
+		max-width: 1000px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.about-container {
+		background-position: 75% 50%;
+
+	}
+}
+
+@media (max-width: 992px) {
+	.about {
+		width:75%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.about-container {
+		background-position: 70% 50%;
+
+	}
+
+	.title-container {
+		max-width: 350px;
+		min-height: 400px;
+		padding-top:100px;
+	}
+}
+
+@media (max-width: 576px) {
+	/*.houses {
+		bottom:40%;
+	}*/
+
+	.big-title {
+		font-size: 4rem;
+	}
+
+	.subitle {
+		font-size: 2rem;
+	}
+
+	.title-container {
+		max-width: 250px;
+		min-height: 300px;
+
+	}
+}
